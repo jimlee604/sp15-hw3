@@ -1,0 +1,17 @@
+<h1>Here are your databases:</h1>
+
+<h1> Cats </h1>
+<% @cats.each do |cat| %>
+  <%= cat.name %> <br>
+<% end %>
+  
+<h1> Users </h1>
+<% @users.each do |user| %>
+  username: <%= user.username %> | email: <%= user.email %><br>
+<% end %>
+
+<h1> Todo </h1>
+Done? | Task <br>
+<% @todos.each do |todo| %>
+  <%= todo.finished %> | tasks: <%= todo.tasks %> <br>
+<% end %>
